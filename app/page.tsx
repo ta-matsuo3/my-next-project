@@ -3,13 +3,13 @@ import styles from "./page.module.css";
 import ButtonLink from "./_compornents/ButtonLink/Index";
 import NewsList from "./_compornents/NewsList/NewsList";
 import { getNewsList } from "./_libs/microcms";
-import { NEWS_LIST_LIST } from "./_constants";
+import { TOP_NEWS_LIMIT } from "./_constants";
 
 
 export default async function Home() {
 
   const data = await getNewsList({
-    limit: NEWS_LIST_LIST
+    limit: TOP_NEWS_LIMIT
   })
 
 
